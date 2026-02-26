@@ -80,8 +80,16 @@ window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 60);
 });
 
-// ── TYPED TEXT ──
-const phrases = ['LLMs & RAG pipelines.','LangChain & OpenAI.','FastAPI & ChromaDB.','Python & Generative AI.','Agentic AI systems.'];
+// ── TYPED TEXT ── (ML removed, Frontend added)
+const phrases = [
+  'LLMs & RAG pipelines.',
+  'LangChain & OpenAI.',
+  'FastAPI & ChromaDB.',
+  'Python & Generative AI.',
+  'Agentic AI systems.',
+  'React & Frontend Dev.',
+  'HTML, CSS & JavaScript.'
+];
 let phraseIdx = 0, charIdx = 0, deleting = false;
 const typedEl = document.getElementById('typed');
 function type() {
@@ -117,3 +125,9 @@ window.addEventListener('scroll', () => {
   sections.forEach(s => { if (window.scrollY >= s.offsetTop - 220) current = s.id; });
   navLinks.forEach(l => { l.classList.toggle('active', l.getAttribute('href') === '#' + current); });
 });
+
+
+
+
+
+
