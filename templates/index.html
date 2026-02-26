@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Khushi Jain — AI/ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="noise"></div>
+
+  <!-- FACE INTRO -->
+  <div id="face-intro">
+    <div id="scrollTrack">
+      <div class="scroll-spacer"></div>
+    </div>
+    <div class="face-fixed">
+      <div class="face-scroll-hint" id="faceScrollHint">
+        <span>scroll to enter</span>
+        <div class="face-scroll-arrow">↓</div>
+      </div>
+      <div class="face-wrap" id="faceWrap">
+        <div class="face-eyes">
+          <div class="eye left-eye"><div class="pupil"></div></div>
+          <div class="eye right-eye"><div class="pupil"></div></div>
+        </div>
+        <div class="mouth-wrap" id="mouthWrap">
+          <div class="mouth-top" id="mouthTop"></div>
+          <div class="mouth-inside" id="mouthInside">
+            <div class="teeth-top">
+              <div class="tooth"></div><div class="tooth"></div><div class="tooth"></div>
+              <div class="tooth"></div><div class="tooth"></div><div class="tooth"></div>
+            </div>
+            <div class="tongue"></div>
+            <div class="teeth-bottom">
+              <div class="tooth"></div><div class="tooth"></div><div class="tooth"></div>
+              <div class="tooth"></div><div class="tooth"></div><div class="tooth"></div>
+            </div>
+          </div>
+          <div class="mouth-bottom" id="mouthBottom"></div>
+        </div>
+        <div class="face-name" id="faceName">KHUSHI JAIN</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-logo">KJ<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="/cdn-cgi/l/email-protection#86edecedeef3f5eeefece7efe8b7b2b6b7c6e1ebe7efeaa8e5e9eb" class="nav-cta">Hire Me</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-circle"></div>
+    <div class="hero-content">
+      <div class="hero-tag reveal-up">AI/ML Engineer · ECE @ Shiv Nadar IoE</div>
+      <h1 class="hero-name reveal-up delay-1">
+        <span class="line">KHUSHI</span>
+        <span class="line outline">JAIN</span>
+      </h1>
+      <p class="hero-sub reveal-up delay-2">
+        Building intelligent systems with<br>
+        <span class="typed-text" id="typed"></span><span class="cursor-blink">|</span>
+      </p>
+      <div class="hero-btns reveal-up delay-3">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="/cdn-cgi/l/email-protection#eb808180839e988382818a8285dadfdbdaab8c868a8287c5888486" class="btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-uni reveal-up delay-4">Shiv Nadar IoE · Greater Noida · 2023–2027</div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Python</span><span>·</span>
+      <span>LangChain</span><span>·</span>
+      <span>OpenAI API</span><span>·</span>
+      <span>RAG Pipelines</span><span>·</span>
+      <span>FastAPI</span><span>·</span>
+      <span>ChromaDB</span><span>·</span>
+      <span>Flask</span><span>·</span>
+      <span>Agentic AI</span><span>·</span>
+      <span>Prompt Engineering</span><span>·</span>
+      <span>Vector Databases</span><span>·</span>
+      <span>Python</span><span>·</span>
+      <span>LangChain</span><span>·</span>
+      <span>OpenAI API</span><span>·</span>
+      <span>RAG Pipelines</span><span>·</span>
+      <span>FastAPI</span><span>·</span>
+      <span>ChromaDB</span><span>·</span>
+      <span>Flask</span><span>·</span>
+      <span>Agentic AI</span><span>·</span>
+      <span>Prompt Engineering</span><span>·</span>
+      <span>Vector Databases</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-left">
+        <div class="section-label">/ About Me</div>
+        <h2 class="section-title reveal-up">I build AI that<br><span class="red">actually works.</span></h2>
+        <p class="about-text reveal-up delay-1">
+          I'm Khushi — a 3rd year ECE student at Shiv Nadar IoE obsessed with Generative AI and LLM systems. I build production-ready pipelines using RAG, LangChain, OpenAI, and vector databases — not just toy demos.
+        </p>
+        <p class="about-text reveal-up delay-2">
+          Currently working as a Placement Operations Intern and leading marketing for GDSC. Actively seeking AI/ML internships where I can build at scale.
+        </p>
+        <div class="about-stats reveal-up delay-3">
+          <div class="stat"><span class="stat-num">4+</span><span class="stat-label">AI Projects</span></div>
+          <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Students Coordinated</span></div>
+          <div class="stat"><span class="stat-num">2027</span><span class="stat-label">Graduating</span></div>
+        </div>
+      </div>
+      <div class="about-right reveal-up delay-2">
+        <div class="about-card">
+          <div class="about-card-inner">
+            <div class="big-initial">KJ</div>
+            <div class="about-card-badge">ECE · SNU IoE</div>
+            <div class="about-card-sub">AI/ML Focus</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-label">/ Technical Skills</div>
+    <h2 class="section-title reveal-up">What I build <span class="red">with.</span></h2>
+    <div class="skills-grid">
+
+      <div class="skill-card reveal-up delay-1">
+        <div class="skill-icon">🤖</div>
+        <h3>Generative AI</h3>
+        <p>OpenAI API, LangChain, Prompt Engineering, RAG Pipelines, LLM Applications, Agentic AI & Multi-Agent Systems.</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w: 88%"></div></div>
+      </div>
+
+      <div class="skill-card reveal-up delay-2">
+        <div class="skill-icon">🗄️</div>
+        <h3>Vector Databases</h3>
+        <p>ChromaDB, semantic search, embeddings generation, scalable information retrieval for AI pipelines.</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w: 82%"></div></div>
+      </div>
+
+      <div class="skill-card reveal-up delay-3">
+        <div class="skill-icon">🐍</div>
+        <h3>Python</h3>
+        <p>Primary language for AI/ML development, data processing with Pandas, automation scripts, REST APIs.</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w: 92%"></div></div>
+      </div>
+
+      <div class="skill-card reveal-up delay-1">
+        <div class="skill-icon">⚡</div>
+        <h3>Frameworks</h3>
+        <p>FastAPI for production backends, Flask for web apps, Streamlit for rapid AI demos and dashboards.</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w: 85%"></div></div>
+      </div>
+
+      <div class="skill-card reveal-up delay-2">
+        <div class="skill-icon">🧠</div>
+        <h3>AI Concepts</h3>
+        <p>Context Engineering, Multi-Agent Systems, Agentic AI workflows, LLM fine-tuning and evaluation.</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w: 78%"></div></div>
+      </div>
+
+      <div class="skill-card reveal-up delay-3">
+        <div class="skill-icon">🛠️</div>
+        <h3>Tools & Stack</h3>
+        <p>Git, Linux, VS Code, Jupyter Notebook, REST APIs, SQL, Docker basics, cloud deployment (Render/Railway).</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w: 80%"></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label">/ Projects</div>
+    <h2 class="section-title reveal-up">Things I've <span class="red">shipped.</span></h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal-up delay-1" data-num="01">
+        <div class="project-top">
+          <span class="project-tag">RAG · LangChain · OpenAI</span>
+          <a href="https://github.com/khushijain" target="_blank" class="project-arrow">↗</a>
+        </div>
+        <h3 class="project-name">RAG-Based AI Assistant</h3>
+        <p class="project-desc">Intelligent document retrieval system using Retrieval-Augmented Generation. Semantic search via ChromaDB embeddings + FastAPI REST backend. Production-ready, modular AI architecture.</p>
+        <div class="project-stack">
+          <span>OpenAI API</span><span>LangChain</span><span>FastAPI</span><span>ChromaDB</span><span>Python</span>
+        </div>
+        <div class="project-date">Jan 2026</div>
+      </div>
+
+      <div class="project-card reveal-up delay-2" data-num="02">
+        <div class="project-top">
+          <span class="project-tag">LLM · Gemini · Chatbot</span>
+          <a href="https://github.com/khushijain" target="_blank" class="project-arrow">↗</a>
+        </div>
+        <h3 class="project-name">AI Chatbot — Gemini Assistant</h3>
+        <p class="project-desc">Real-time conversational AI integrating Gemini LLM APIs with session memory and optimized prompt pipelines for enhanced contextual accuracy and intelligent interaction.</p>
+        <div class="project-stack">
+          <span>Gemini API</span><span>Prompt Engineering</span><span>Session Memory</span><span>Python</span>
+        </div>
+        <div class="project-date">Dec 2025</div>
+      </div>
+
+      <div class="project-card reveal-up delay-3" data-num="03">
+        <div class="project-top">
+          <span class="project-tag">Flask · SQLite · Full Stack</span>
+          <a href="https://github.com/khushijain" target="_blank" class="project-arrow">↗</a>
+        </div>
+        <h3 class="project-name">Dynamic Portfolio Creator</h3>
+        <p class="project-desc">Flask web app that automates portfolio generation with SQLite backend for data management. Improved workflow efficiency with reliable full-stack architecture.</p>
+        <div class="project-stack">
+          <span>Flask</span><span>SQLite</span><span>Python</span><span>HTML/CSS</span>
+        </div>
+        <div class="project-date">Dec 2025</div>
+      </div>
+
+      <div class="project-card reveal-up delay-1" data-num="04">
+        <div class="project-top">
+          <span class="project-tag">ML · Python · Data</span>
+          <a href="https://github.com/khushijain" target="_blank" class="project-arrow">↗</a>
+        </div>
+        <h3 class="project-name">Customer Churn Prediction</h3>
+        <p class="project-desc">End-to-end ML pipeline for churn pattern identification using Python & Pandas. Visualization dashboards providing data-driven business intelligence and decision support.</p>
+        <div class="project-stack">
+          <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>ML</span><span>Visualization</span>
+        </div>
+        <div class="project-date">Dec 2025</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-label">/ Experience & Leadership</div>
+    <h2 class="section-title reveal-up">Where I've <span class="red">contributed.</span></h2>
+    <div class="exp-list">
+
+      <div class="exp-card reveal-up delay-1">
+        <div class="exp-left">
+          <div class="exp-dot"></div>
+          <div class="exp-line"></div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-meta">
+            <span class="exp-tag">Internship</span>
+            <span class="exp-date">Mar 2024 – Present</span>
+          </div>
+          <h3 class="exp-role">Placement Operations Intern</h3>
+          <p class="exp-org">Career Development Center, Shiv Nadar IoE</p>
+          <ul class="exp-points">
+            <li>Coordinated 500+ students across 120+ companies with 100% accuracy using structured tracking workflows</li>
+            <li>Achieved 30% faster data processing by organizing structured datasets for reliable system operations</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-card reveal-up delay-2">
+        <div class="exp-left">
+          <div class="exp-dot"></div>
+          <div class="exp-line"></div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-meta">
+            <span class="exp-tag">Leadership</span>
+            <span class="exp-date">2024</span>
+          </div>
+          <h3 class="exp-role">Marketing Lead</h3>
+          <p class="exp-org">Google Developer Student Club (GDSC) — SNU</p>
+          <ul class="exp-points">
+            <li>Led marketing strategy and outreach for one of SNU's largest tech communities</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-card reveal-up delay-3">
+        <div class="exp-left">
+          <div class="exp-dot"></div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-meta">
+            <span class="exp-tag">Volunteer</span>
+            <span class="exp-date">2023–2024</span>
+          </div>
+          <h3 class="exp-role">Teaching Volunteer</h3>
+          <p class="exp-org">AURA Teaching Initiative — SNU</p>
+          <ul class="exp-points">
+            <li>Volunteered as a teaching assistant for underprivileged students</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="section-label">/ Let's Connect</div>
+      <h2 class="contact-title reveal-up">
+        Open to<br>
+        <span class="outline-big">internships.</span>
+      </h2>
+      <p class="contact-sub reveal-up delay-1">AI/ML · Generative AI · Backend Engineering · Research</p>
+      <a href="/cdn-cgi/l/email-protection#d9b2b3b2b1acaab1b0b3b8b0b7e8ede9e899beb4b8b0b5f7bab6b4" class="contact-email reveal-up delay-2">
+        <span class="__cf_email__" data-cfemail="563d3c3d3e23253e3f3c373f386762666716313b373f3a7835393b">[email&#160;protected]</span>
+        <span class="email-arrow">↗</span>
+      </a>
+      <div class="social-links reveal-up delay-3">
+        <a href="https://github.com/" target="_blank" class="social-link">GitHub ↗</a>
+        <span class="divider">·</span>
+        <a href="https://linkedin.com/" target="_blank" class="social-link">LinkedIn ↗</a>
+        <span class="divider">·</span>
+        <a href="tel:+919105338895" class="social-link">+91 91053 38895</a>
+      </div>
+    </div>
